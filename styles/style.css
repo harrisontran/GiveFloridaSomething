@@ -95,3 +95,9 @@ th {
 	width:60%;
 	margin:auto;
 }
+.partial {
+	background-color:#ffff99;
+}
+.correct {
+	background-color:#c2f0c2;
+}
