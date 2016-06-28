@@ -10,6 +10,13 @@
 	<meta name="description" content="Documentation of GFS' tendency to send storms to Florida.">
 	<meta name="keywords" content="GFS, weather, model, Global Forecast System, Florida, hurricane, tropical storm, tropics">
 	<meta name="author" content="Harrison Tran">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+	<script>
+	$(document).ready(function() {
+    	$("#runs").load("static/table");
+	}); 
+	</script>
 </head>
 <body>
 	<header>
@@ -17,28 +24,17 @@
 		<h2 id="page-subtitle">Whenever the <u class="hover" title="Global Forecast System">GFS</u> sends a storm towards Florida...</h2>
 	</header>
 	<section>
+		<p>The beloved <strong>Global Forecast System</strong>, our beloved Florida wishcast model, is a weather forecast model designed by the National Centers for Environmental Prediction. For unknown reasons, it has a tendency to send tropical and subtropical cyclones towards Florida, and many of these forecasts do not end up verifying. This is only a list of storms the GFS predicts will hit or impact Florida; there's a plethora of "phantom storms" that the GFS creates (<a href="http://i.snag.gy/pVv7L.jpg" target="_blank">e.g.</a>), but those are not listed here. This page also only lists GFS deterministic or GEFS control runs; individual ensemble hype is not included.</p>
+		<p>You can mouse over the dates in the table below to view a pop-up image of the model run in question. Images are courtesy of Levi Cowan at <a href="http://www.tropicaltidbits.com">TropicalTidbits.com</a>, <a href="http://www.weatherbell.com/">WeatherBell Analytics, LLC.</a>, or NOAA/NASA.</p>
 		<table id="runs">
-			<tr>
-				<th>Run Time</th>
-				<th colspan="2">Landfall Time(s)</th>
-				<th>Destination(s)</th>
-				<th>Surface Pressure</th>
-			</tr>
-			<tr>
-				<td><a class="thumb" href="#">12Z June 19, 2016<span><img src="http://i.imgur.com/vumYsu8.png"></span></a></td>
-				<td>+348</td>
-				<td>00Z July 4, 2016</td>
-				<td>Cedar Key</td>
-				<td>&le; 1003mb</td>
-			</tr>
-			<tr>
-				<td><a class="thumb" href="#">00Z June 20, 2016<span><img src="http://i.imgur.com/U52MTTE.png"></span></a></td>
-				<td>+312</td>
-				<td>00Z July 3, 2016</td>
-				<td>Horseshoe Beach</td>
-				<td>~ 999mb</td>
-			</tr>
+			
 		</table>
+	</section>
+	<section>
+		<div id="focus">
+			<img src="http://i60.tinypic.com/359weus.png" width=80% />
+			<p>None of these ensembles verified. Except maybe the one that showed no storms. <small>[Image courtesy of WeatherBell Analytics]</small></p>
+		</div>
 	</section>
 	<footer>
 		<p class="footer-text">Harrison Tran</p>
